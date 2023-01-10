@@ -1,0 +1,30 @@
+#alert {
+	display: none;
+	color: $darkBlue;
+	@include sanchez;
+}
+
+#alert .alert-content {
+	display: inline-block;
+	padding: 10px;
+}
+	
+#alert img {
+	margin-bottom: 20px;
+}
+	
+#alert .alert_buttons {
+	float: right;
+	margin-top: 40px;
+}
+		
+#alert .alert_buttons a {
+	padding: 10px 40px;
+	color: $white;
+	border-radius: 5px;
+}
+			
+#alert .alert_buttons a.cancel {
+	background: $gray;
+	margin-right: 30px;
+}

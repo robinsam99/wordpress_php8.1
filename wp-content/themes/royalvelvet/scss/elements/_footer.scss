@@ -1,0 +1,359 @@
+#global_footer {
+	@include span-columns(12);
+	@include texture-bg;
+	padding: 20px 0;
+	text-align: center;
+
+	p {
+		@include bvilleRegular;
+		color: #949495;
+		text-align: center;
+		font-size: 18px;
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	.join_now {
+		@include button(#000001, #f8f8f8, 18px);
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	#join_now {
+		display: none;
+	}
+
+	.footer_bottom {
+		@include clearfix;
+		display: inline-block;
+	}
+
+	.footer_menu {
+		@include clearfix;
+		list-style: none;
+		float: left;
+
+		li {
+			float: left;
+			padding-right: 40px;
+
+			@include media($mobile) {
+			    padding-right: 25px;
+			}
+
+			&:after {
+				content: '|';
+				color: #949495;
+				padding-left: 20px;
+				position: absolute;
+				top: 50%;
+				margin-top: -9px;
+
+				@include media($mobile) {
+				    padding-left: 10px;
+					margin-top: -10px;
+				}
+			}
+
+			&:hover {
+
+				a {
+					color: $white;
+				}
+			}
+
+			a {
+				@include avenirReg;
+				color: #949495;
+				font-size: 12px;
+			}
+		}
+	}
+
+	.trademark {
+		color: #949495;
+		float: left;
+
+		p {
+			@include avenirReg;
+			color: #949495;
+			font-size: 12px;
+			margin-bottom: 0;
+			line-height: 28px;
+		}
+	}
+
+	.share {
+        margin: 20px 0;
+
+        ul {
+            @include clearfix;
+            list-style: none;
+        }
+
+        li {
+            color: $white;
+			display: inline;
+
+            &:nth-child(3) {
+                a {
+                    &:before {
+                        content: '\f231';
+                        font-family: 'FontAwesome';
+                        display: block;
+                    }
+                }
+            }
+
+			&:hover {
+
+				a {
+					color: $white;
+
+					&:before {
+						color: $white;
+					}
+				}
+			}
+
+            a {
+                font-size: 30px;
+                color: #949495;
+                display: inline-block;
+				padding: 0 12px;
+            }
+        }
+    }
+}
+
+.featherlight {
+	z-index: 9998 !important;
+
+	@include media($mobile) {
+	    padding: 0px;
+	}
+
+	&:before {
+
+		@include media($mobile) {
+		    margin: 0;
+		}
+	}
+
+	.featherlight-content {
+		background: #abbdc5 !important;
+		padding: 10px !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		width: 100vw !important;
+		max-width: 785px !important;
+		border-bottom: none !important;
+
+		@include media($mobile) {
+		    width: 100% !important;
+			max-width: 100vh !important;
+			overflow-x: hidden !important;
+			max-height: 100% !important;
+		}
+
+		.featherlight-close-icon {
+			top: 24px;
+			right: 26px;
+			background: none;
+			border: 1px solid $white;
+			border-radius: 50%;
+			color: $white;
+		}
+	}
+}
+
+.fancybox-overlay {
+	background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.fancybox-wrap {
+	@include transform(translate(-50%, -50%));
+	width: 100vw !important;
+	max-width: 785px !important;
+	top: 50% !important;
+	left: 50% !important;
+
+	@include media($mobile) {
+	    position: fixed !important;
+	}
+}
+
+.fancybox-skin {
+	background: #abbdc5 !important;
+	border-radius: 0 !important;
+}
+
+.fancybox-inner {
+	width: 100% !important;
+}
+
+.fancybox-close {
+	top: 32px !important;
+	right: 32px !important;
+	height: 28px !important;
+	width: 28px !important;
+	background: none;
+	border: 1px solid $white;
+	border-radius: 50%;
+	color: $white !important;
+
+	&:hover {
+		color: $white !important;
+	}
+
+	&:after {
+		@include transform(translate(-50%, -55%));
+		content: 'x';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		font-size: 20px;
+	}
+}
+
+#join_now {
+	display: block;
+	border: 2px solid $white;
+	text-align: center;
+
+	@include media($mobile) {
+	    padding: 0 20px;
+		overflow: hidden;
+	}
+
+	img {
+		margin-top: 15px;
+		margin-bottom: 5px;
+	}
+
+	p {
+		@include bvilleRegular;
+		font-size: 30px;
+		color: $white;
+		line-height: 1.25;
+	}
+
+	.gform_wrapper {
+		max-width: 530px;
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 35px;
+
+		.top_label {
+			.gfield_label {
+				@include avenirMed;
+				font-size: 14px;
+				color: $white;
+				margin: 0;
+			}
+
+			#field_3_2 {
+				width: 49.4%;
+
+				@include media($mobile) {
+					width: 100%;
+				}
+			}
+
+			#field_3_3 {
+				clear: left;
+				display: inline-block;
+				width: 78.3%;
+				margin-right: 1.6%;
+
+				@include media($mobile) {
+				    width: 100%;
+					margin-right: 0;
+				}
+			}
+
+			#field_3_4 {
+				clear: right;
+				display: inline-block;
+				width: 20.1%;
+
+				@include media($mobile) {
+				    width: 100%;
+					clear: both;
+				}
+			}
+
+			#field_3_6 {
+
+				.gfield_label {
+					display: none;
+				}
+
+				.ginput_container_checkbox {
+					margin-top: 0;
+				}
+			}
+
+			input[type="text"] {
+				width: 100%;
+				border: none;
+				padding: 11.5px 0 11.5px 12px;
+				border-radius: 0px;
+			}
+		}
+
+		.gfield_checkbox li {
+			left: 35px;
+
+			@include media($mobile) {
+			    left: 15px;
+			}
+
+			label {
+				@include avenirMed;
+				font-size: 14px;
+				color: $white;
+
+				a {
+					color: $white;
+					text-decoration: underline;
+				}
+			}
+		}
+
+		.gform_footer {
+			margin-bottom: 41px;
+			padding-bottom: 0px;
+			text-align: center;
+
+			input[type="submit"] {
+				@include avenirReg;
+				border: none;
+				display: inline-block;
+				font-size: 18px;
+				background-color: #33353a;
+				color: $white;
+				text-transform: uppercase;
+				padding: 9px 70px;
+				border-radius: 0;
+			}
+		}
+	}
+}
+
+#joinForm {
+	display: none;
+}
+
+#join_now {
+	background: #abbdc5;
+}
+
+html.iframe-form {
+	margin-top: 0 !important;
+	background: #abbdc5;
+
+	#wpadminbar {
+		display: none !important;
+	}
+}

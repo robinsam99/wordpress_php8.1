@@ -1,0 +1,82 @@
+/* line 285, ../scss/elements/_footer.scss */
+.red8_func_footer_popup { float: left; display: block; margin-right: 2.35765%; width: 100%; color: #fff; width: 103%; text-align: left; background-color: rgba(255, 255, 255, 0.75); position: fixed; bottom: 0; display: flex; z-index: 1000; }
+/* line 85, ../scss/libs/neat/grid/_span-columns.scss */
+.red8_func_footer_popup:last-child { margin-right: 0; }
+@media screen and (max-width: 768px) { /* line 285, ../scss/elements/_footer.scss */
+  .red8_func_footer_popup { width: 100%; display: block !important; } }
+/* line 301, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_left { float: left; display: block; margin-right: 2.35765%; width: 57.35098%; margin-right: 0; height: 100%; padding: 20px 0 10px; display: inline-block; color: #000000; }
+/* line 85, ../scss/libs/neat/grid/_span-columns.scss */
+.red8_func_footer_popup .red8_func_popup_left:last-child { margin-right: 0; }
+@media screen and (max-width: 768px) { /* line 301, ../scss/elements/_footer.scss */
+  .red8_func_footer_popup .red8_func_popup_left { width: 100%; padding: 20px; } }
+/* line 314, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_left:before { content: ''; display: inline-block; height: 100%; vertical-align: middle; margin-right: -0.25em; }
+/* line 322, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_left .sign_up_text { float: left; display: block; margin-right: 2.35765%; width: 57.35098%; margin-left: 27.72186%; text-align: left; float: none; display: inline-block; vertical-align: middle; }
+/* line 85, ../scss/libs/neat/grid/_span-columns.scss */
+.red8_func_footer_popup .red8_func_popup_left .sign_up_text:last-child { margin-right: 0; }
+@media screen and (max-width: 768px) { /* line 322, ../scss/elements/_footer.scss */
+  .red8_func_footer_popup .red8_func_popup_left .sign_up_text { width: 75%; margin-left: 0; } }
+/* line 335, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_left .sign_up_text h3 { font-size: 26px; line-height: 28px; margin: 0; float: left; }
+@media screen and (max-width: 768px) { /* line 335, ../scss/elements/_footer.scss */
+  .red8_func_footer_popup .red8_func_popup_left .sign_up_text h3 { font-size: 22px; } }
+/* line 347, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_left .sign_up_text p { float: left; font-size: 14px; line-height: 16px; margin: 10px 0 0; width: 75%; }
+@media screen and (max-width: 768px) { /* line 347, ../scss/elements/_footer.scss */
+  .red8_func_footer_popup .red8_func_popup_left .sign_up_text p { width: 80%; font-size: 13px; } }
+/* line 361, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_left img { float: left; display: block; margin-right: 2.35765%; width: 6.17215%; position: absolute; right: 10px; bottom: -10px; width: 22%; float: left; }
+/* line 85, ../scss/libs/neat/grid/_span-columns.scss */
+.red8_func_footer_popup .red8_func_popup_left img:last-child { margin-right: 0; }
+@media screen and (max-width: 768px) { /* line 361, ../scss/elements/_footer.scss */
+  .red8_func_footer_popup .red8_func_popup_left img { float: left; display: block; margin-right: 3.57866%; width: 9.36867%; position: absolute; right: 30px; bottom: 0px; width: 30%; float: left; }
+  /* line 85, ../scss/libs/neat/grid/_span-columns.scss */
+  .red8_func_footer_popup .red8_func_popup_left img:last-child { margin-right: 0; } }
+/* line 380, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_right { float: left; display: block; margin-right: 2.35765%; width: 40.29137%; padding: 3% 25px 25px; display: flex; background-color: rgba(0, 0, 0, 0.55); }
+/* line 85, ../scss/libs/neat/grid/_span-columns.scss */
+.red8_func_footer_popup .red8_func_popup_right:last-child { margin-right: 0; }
+@media screen and (max-width: 768px) { /* line 380, ../scss/elements/_footer.scss */
+  .red8_func_footer_popup .red8_func_popup_right { width: 100%; padding: 25px; } }
+/* line 391, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_right:before { content: ''; display: inline-block; height: 100%; vertical-align: middle; margin-right: -0.25em; }
+/* line 399, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_right .sign_up_newsletter { float: left; display: block; margin-right: 2.35765%; width: 82.94039%; text-align: left; float: none; display: inline-block; vertical-align: middle; margin-top: 2%; }
+/* line 85, ../scss/libs/neat/grid/_span-columns.scss */
+.red8_func_footer_popup .red8_func_popup_right .sign_up_newsletter:last-child { margin-right: 0; }
+@media screen and (max-width: 768px) { /* line 399, ../scss/elements/_footer.scss */
+  .red8_func_footer_popup .red8_func_popup_right .sign_up_newsletter { width: 100%; margin-top: 0; } }
+/* line 412, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_right .sign_up_newsletter .sailthru-widget-label { display: none; }
+/* line 416, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_right .sign_up_newsletter input[type="text"] { float: left; height: 30px; border: 0; }
+@media screen and (max-width: 768px) { /* line 416, ../scss/elements/_footer.scss */
+  .red8_func_footer_popup .red8_func_popup_right .sign_up_newsletter input[type="text"] { border-radius: 0; } }
+/* line 427, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_right .sign_up_newsletter .sailthru-signup-widget .form-group { margin-bottom: 0; float: left; width: 90%; }
+/* line 433, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_right .sign_up_newsletter .input-group-btn { float: right; position: absolute; right: 0; }
+/* line 438, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_right .sign_up_newsletter .input-group-btn button { background: #f7f7f2; border: none; padding: 5px 10px; color: #666666; height: 30px; text-transform: uppercase; }
+/* line 446, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_right .sign_up_newsletter .input-group-btn button:hover { background: #e4e4d2; }
+/* line 452, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_right .sign_up_newsletter ::-webkit-input-placeholder { color: #666666; font-size: 10px; padding: 5px; }
+/* line 458, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_right .sign_up_newsletter :-moz-placeholder { /* Firefox 18- */ color: #666666; font-size: 10px; padding: 5px; }
+/* line 464, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_right .sign_up_newsletter ::-moz-placeholder { /* Firefox 19+ */ color: #666666; font-size: 10px; padding: 5px; }
+/* line 470, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_right .sign_up_newsletter :-ms-input-placeholder { color: #666666; font-size: 10px; padding: 5px; }
+/* line 478, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_popup_close_btn { float: left; display: block; margin-right: 2.35765%; width: 82.94039%; text-align: right; position: absolute; top: 30px; right: 100px; cursor: pointer; width: auto; }
+/* line 85, ../scss/libs/neat/grid/_span-columns.scss */
+.red8_func_footer_popup .red8_func_popup_close_btn:last-child { margin-right: 0; }
+@media screen and (max-width: 768px) { /* line 478, ../scss/elements/_footer.scss */
+  .red8_func_footer_popup .red8_func_popup_close_btn { display: none; } }
+/* line 492, ../scss/elements/_footer.scss */
+.red8_func_footer_popup .red8_func_mobile_popup_close_btn { display: none; }
+@media screen and (max-width: 768px) { /* line 492, ../scss/elements/_footer.scss */
+  .red8_func_footer_popup .red8_func_mobile_popup_close_btn { display: block; position: absolute; top: 20px; right: 100px; cursor: pointer; width: auto; color: #ff0344; right: 35px; font-size: 22px; } }

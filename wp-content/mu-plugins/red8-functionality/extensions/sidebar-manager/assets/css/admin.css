@@ -1,0 +1,10 @@
+.sidebar_manager_wrap .name_error {
+	display: none;
+	border-left: 4px solid #dd3d36;
+	padding: 10px 12px;
+	margin: 5px 0 15px;
+}
+
+.message.updated {
+	margin: 5px 0 2px;
+}

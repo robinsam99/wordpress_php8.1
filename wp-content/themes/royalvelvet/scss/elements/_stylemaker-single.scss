@@ -1,0 +1,302 @@
+.stylemaker_secret {
+    background-color: $white;
+    padding-top: 20px;
+
+    .container710 {
+        padding: 0 20px;
+    }
+
+    h1 {
+        @include avenirMed;
+        font-size: 18px;
+        color: $dark-text;
+        text-transform: uppercase;
+    }
+
+    .intro_copy {
+
+        p {
+            @include avenirReg;
+            font-size: 18px;
+            color: $dark-text;
+        }
+    }
+
+    .banner_image {
+        margin-top: 20px;
+
+        @include media($tablet) {
+            margin-top: 10px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .share {
+        margin: 20px 0;
+
+        span {
+            @include avenirBold;
+            font-size: 12px;
+            color: $black;
+            float: left;
+            margin-right: 18px;
+
+            @include media($mobile) {
+                margin-top: 2px;
+            }
+        }
+
+        ul {
+            @include clearfix;
+            list-style: none;
+        }
+
+        li {
+            float: left;
+            margin-right: 16px;
+            text-align: center;
+            color: $white;
+            background-color: #abbdc5;
+            border-radius: 50%;
+
+            &:last-child {
+                margin-right: 0px;
+
+                a {
+                    &:before {
+                        content: '\f231';
+                        font-family: 'FontAwesome';
+                        display: block;
+                    }
+                }
+
+                span {
+                    font-size: 12px !important;
+                    line-height: 2 !important;
+                    background: none;
+                    width: 24px !important;
+                    height: 24px !important;
+                    margin-right: 0 !important;
+                    color: $white !important;
+                    margin-top: 0;
+
+                    @include media($mobile) {
+                        font-size: 16px !important;
+                        line-height: 2 !important;
+                        width: 32px !important;
+                        height: 32px !important;
+                    }
+
+                    &:before {
+                        content: '\f231';
+                        font-family: 'FontAwesome';
+                        display: inline-block;
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: 1;
+                        -webkit-font-smoothing: antialiased;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            a {
+                font-size: 12px;
+                color: $white;
+                height: 24px;
+                width: 24px;
+                display: inline-block;
+
+                @include media($mobile) {
+                    font-size: 16px !important;
+                    line-height: 2 !important;
+                    width: 32px !important;
+                    height: 32px !important;
+                }
+            }
+        }
+    }
+
+    .content_wysiwyg {
+
+        img {
+            display: block;
+            margin-bottom: 10px;
+
+            @include media($tablet) {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        h3 {
+            @include avenirMed;
+            font-size: 18px;
+            color: $dark-text;
+            margin-bottom: 10px;
+
+            @include media($mobile) {
+                padding-left: 10px;
+            }
+        }
+
+        ul {
+            list-style-position: inside;
+            list-style-type: none;
+            margin: 0 0 55px 0;
+            padding-left: 0;
+
+            @include media($mobile) {
+                padding-left: 10px;
+                margin: 0 0 21px 0;
+            }
+
+            li {
+                @include avenirReg;
+                font-size: 16px;
+                color: $dark-text;
+                line-height: 24px;
+                padding-left: 30px;
+
+                @include media ($mobile) {
+                    padding-left: 12px;
+                }
+
+                &:before {
+                    content: '\2022';
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+
+        ol {
+            margin: 0 0 55px 0;
+            padding-left: 15px;
+
+            @include media($mobile) {
+                margin-bottom: 35px;
+            }
+
+            li {
+                @include avenirReg;
+                font-size: 16px;
+                color: $dark-text;
+                line-height: 24px;
+                margin-bottom: 15px;
+
+                span {
+                    @include avenirDemi;
+                }
+
+                strong {
+                    @include avenirBold;
+                }
+            }
+        }
+    }
+
+    .more_stylemaker_secrets {
+
+        ul {
+            @include clearfix;
+            text-align: center;
+
+            li {
+                @include span-columns(4);
+                @include omega(3n);
+
+                @include media($mobile) {
+                    @include omega-reset(3n, 4);
+                    @include span-columns(2);
+                    @include omega(2n);
+
+                    &:last-child {
+                        display: none;
+                    }
+                }
+
+                img {
+                    width: auto;
+                    height: auto;
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+
+                    @include media($tablet) {
+                        width: 100%;
+                    }
+
+                    @include media($mobile) {
+                        margin-bottom: 5px;
+                    }
+                }
+
+                a {
+                    display: inline-block;
+                    outline: none;
+                }
+
+                a:not(.title) {
+                    @include avenirMed;
+                    display: block;
+                    font-size: 13px;
+                    color: $dark-text;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    .tip_signup_wrap {
+        background: #abbdc5 !important;
+        margin-top: 40px;
+        padding: 10px;
+        margin-bottom: 70px;
+
+        @include media($mobile) {
+            margin: 0px -20px 2px -20px;
+        }
+    }
+
+    .tip_signup {
+        display: block;
+    	border: 2px solid $white;
+    	text-align: center;
+
+        @include media($mobile) {
+            padding: 0 15px;
+        }
+
+    	img {
+    		margin-top: 15px;
+    		margin-bottom: 5px;
+    	}
+
+    	p {
+    		@include bvilleRegular;
+    		font-size: 24px;
+    		color: #33353a;
+
+            @include media($mobile) {
+              padding: 0 10px;
+            }
+    	}
+
+        .join_now {
+    		@include button(#000001, #f8f8f8, 18px);
+    		margin-bottom: 25px;
+            margin-top: 25px;
+    		text-align: center;
+          .fancybox{
+            color: $white;
+            background-color: #35363b;
+            font-weight: bolder;
+          }
+    	}
+    }
+}

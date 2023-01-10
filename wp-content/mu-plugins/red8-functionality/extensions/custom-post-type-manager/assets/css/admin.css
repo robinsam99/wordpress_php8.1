@@ -1,0 +1,185 @@
+.ez_cpt_creator label {
+	width: 150px;
+	display: block;
+	float: left;
+}
+
+.ez_cpt_creator form {
+	//background: #fff;
+	//padding: 20px 40px 40px;
+	display: inline-block;
+	width: 100%;
+}
+
+.ez_cpt_creator label span {
+	font-size: 10px;
+}
+
+.ez_cpt_creator .button_wrap {
+	width: 100%;
+	margin-top: 40px;
+}
+
+.ez_cpt_creator .input_wrap {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.ez_cpt_creator .input_wrap ul {
+	float: left;
+	width: 150px;
+	margin-top: 5px;
+}
+
+.ez_cpt_creator .input_wrap ul li {
+    display: block;
+    width: 100%;
+}
+
+.ez_cpt_creator .input_wrap.taxonomy {
+	width: 200px;
+	min-height: 20px;
+	margin-bottom: 0;
+}
+
+.ez_cpt_creator .input_wrap.taxonomy ul {
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.ez_cpt_creator .input_wrap.taxonomy ul li {
+	padding-right: 5px;
+	width: 45%;
+	float: left;
+}
+
+.ez_cpt_creator .input_wrap.taxonomy input[type="checkbox"] {
+	margin-left: 0;
+}
+
+.ez_cpt_creator .input_wrap.taxonomy ul {
+	margin-bottom: 0;
+}
+
+.ez_cpt_creator .input_wrap input[type="checkbox"] {
+	margin-left: 20px;
+	margin-bottom: 0;
+}
+
+.ez_cpt_creator .input_wrap input[type="checkbox"]:first-child {
+	margin-left: 0;
+}
+
+.ez_cpt_creator .input_wrap input[value="custom-fields"] {
+	margin-left: 0;
+}
+
+.ez_cpt_creator .input_wrap.menu_icon span {
+	font-size: 10px;
+}
+
+.ez_cpt_creator .input_wrap.menu_icon input[type="text"] {
+	margin-bottom: 0;
+} 
+
+.ez_cpt_creator tr {
+	margin-bottom: 20px;
+}
+
+.ez_cpt_creator select {
+	//margin-bottom: 10px;
+}
+
+.ez_cpt_creator textarea {
+	//margin-bottom: 10px;
+	width: 270px;
+}
+
+.ez_cpt_creator .upload_icon {
+	margin-bottom: 20px;
+}
+
+.ez_cpt_creator .inside .column {
+	width: 50%;
+	float: left;
+}
+
+.ez_cpt_creator .name_error {
+	display: none;
+	border-left: 4px solid #dd3d36;
+	padding: 10px 12px;
+	margin: 5px 0 15px;
+}
+
+.ez_cpt_creator .checkbox_error {
+	display: none;
+	border-left: 4px solid #dd3d36;
+	padding: 10px 12px;
+	margin: 5px 0 15px;
+}
+
+.display_ez_cpt_page {
+	margin-right: 20px;
+}
+
+.display_ez_cpt_page .add_new_button {
+	margin-left: 20px;
+}
+
+.display_ez_cpt_page .edit_wrap a {
+	font-size: 12px;
+}
+
+.display_ez_cpt_page .edit_wrap .line_break {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.display_ez_cpt_page td {
+	width: 20%;
+}
+
+.display_ez_tax_page {
+	margin-right: 20px;
+}
+
+.display_ez_tax_page .add_new_button {
+	margin-left: 20px;
+}
+
+.display_ez_tax_page .edit_wrap a {
+	font-size: 12px;
+}
+
+.display_ez_tax_page .edit_wrap .line_break {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.display_ez_tax_page td {
+	width: 20%;
+}
+
+.message.updated {
+	margin: 5px 0 2px;
+}
+
+.dashicon_picker_container {
+	display: none;
+	z-index: 9999;
+	position: absolute;
+	top: 10%;
+	right: 20%;
+	background: #fff;
+	width: 300px;
+	height: 300px;
+	overflow: scroll;
+	border: 2px solid #ddd;
+}
+
+.dashicon_picker_container li {
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+}

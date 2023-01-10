@@ -1,0 +1,440 @@
+.homepage {
+
+    .home_slider {
+	    background-image: none !important;
+        width: 100%;
+        overflow: hidden;
+
+        .swiper-wrapper {
+            transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            max-height: 500px;
+        }
+
+        .slide_copy {
+            @include display(flex);
+            @include align-items(center);
+            @include justify-content(center);
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+
+            h2 {
+                @include bvilleRegular;
+                font-size: 48px;
+                color: $white;
+                text-shadow: 1px 1px 2px #333;
+
+                @include media($mobile) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .shop_at_jcp {
+            position: absolute;
+            right: 30px;
+            bottom: 10px;
+            z-index: 101;
+
+            @include media($mobile) {
+                right: 10px;
+                bottom: 10px;
+                height: 30px;
+            }
+
+            a {
+                display: inline-block;
+
+                img {
+                    display: block;
+
+                    @include media($mobile) {
+                        height: 30px;
+                    }
+                }
+            }
+        }
+
+        .swiper-slide {
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+
+        .swiper-button-prev {
+            background-image: url('../images/left_arrow.png');
+            background-repeat: no-repeat;
+            background-size: 26px 46px;
+            left: 40px;
+            z-index: 100;
+
+            @include media($mobile) {
+                left: 15px;
+                background-size: 16px 26px;
+            }
+        }
+
+        .swiper-button-next {
+            background-image: url('../images/right_arrow.png');
+            background-repeat: no-repeat;
+            background-size: 26px 46px;
+            right: 40px;
+            z-index: 100;
+
+            @include media($mobile) {
+                right: 15px;
+                background-size: 16px 26px;
+            }
+        }
+
+        .swiper-container-horizontal > .swiper-pagination-bullets {
+            bottom: 33px;
+            z-index: 100;
+
+            @include media($tablet) {
+                display: none;
+            }
+        }
+
+        .swiper-pagination-bullet {
+            width: 23px;
+            height: 23px;
+            background: #e8e8e8;
+            opacity: 0.5;
+            margin: 0 11px !important;
+
+            @include media($mobile) {
+                height: 15px;
+                width: 15px;
+            }
+
+            &.swiper-pagination-bullet-active {
+                opacity: 1;
+            }
+        }
+    }
+
+    .filter_section {
+        @include texture-bg;
+        min-height: 156px;
+        padding: 25px 0 26px 0;
+
+        @include media($mobile) {
+            padding: 25px 0 2px 0;
+        }
+
+        .container710 {
+
+            @include media($mobile) {
+                padding: 0 0;
+            }
+        }
+
+        p {
+            @include bvilleRegular;
+            font-size: 18px;
+            color: #f8f8f8;
+            text-align: center;
+        }
+
+        .top_level_filters {
+            @include display(flex);
+            list-style: none;
+            background-color: #f8f8f8;
+            margin-top: 15px;
+
+            li {
+                @include flex-grow(1);
+                display: inline-block;
+                text-align: center;
+
+                &:first-child {
+                    a {
+                        &:before {
+                            content: none;
+                        }
+                    }
+                }
+
+                a {
+                    @include avenirReg;
+                    width: 100%;
+                    text-align: center;
+                    color: $black;
+                    display: block;
+                    text-transform: uppercase;
+                    padding: 5px 0px;
+                    outline: none;
+
+                    &.selected {
+                        background-color: #d9bf93;
+                    }
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        left: -1px;
+                        width: 2px;
+                        background-color: #4e4e4e;
+                        height: 25px;
+                        top: 5px;
+
+                        @include media($mobile) {
+                            width: 1px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .filter_hidden {
+            display: none;
+
+            &.pattern_options {
+
+                ul {
+                    //@include clearfix;
+
+                    li {
+
+                        @include media($mobile) {
+                            width: 33.33333333%;
+                            padding: 0 5px;
+                            float: left;
+                        }
+                    }
+                }
+            }
+
+            ul {
+                @include display(flex);
+                @include justify-content(space-between);
+                list-style: none;
+                margin: 15px 0 0px 0;
+
+                @include media($mobile) {
+                    @include display(block);
+                    @include clearfix;
+                }
+
+                li {
+                    text-align: center;
+                    cursor: pointer;
+
+                    @include media($mobile) {
+                        width: 50%;
+                        padding: 0 5px;
+                        margin-bottom: 5px;
+                        float: left;
+                    }
+
+                    .filter_title {
+                        @include avenirReg;
+                        color: $white;
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                    }
+
+                    .filter_image {
+
+                        img {
+                            display: block;
+                            border: 2px solid transparent;
+
+                            @include media($mobile) {
+                                width: 100%;
+                                border-radius: 3tpx;
+                            }
+
+                            &.selected {
+                                border: 2px solid $white;
+                                box-shadow: 0px 0px 10px 0px $black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mb_filters {
+
+        .container {
+
+            @include media($mobile) {
+                padding: 0 15px;
+            }
+        }
+    }
+
+    .media_boxes_container {
+        background-color: #d6d6d6;
+        padding-bottom: 20px;
+
+        .layout_switch {
+            @include clearfix;
+            width: 100%;
+
+            p {
+                @include avenirDemi;
+                font-size: 14px;
+                color: #35373c;
+                float: right;
+                display: inline-block;
+                margin-top: 7px;
+                margin-bottom: 7px;
+            }
+
+            ul {
+                @include clearfix;
+                clear: both;
+                list-style: none;
+                float: right;
+                margin-bottom: 15px;
+
+                li {
+                    float: left;
+                    cursor: pointer;
+
+                    &.grid {
+                        display: block;
+                        background-image: url('../images/grid_icons.jpg');
+                        width: 20px;
+                        height: 17px;
+                        background-position: 0px 0px;
+
+                        &.active {
+                            background-position: 0px 17px;
+                        }
+                    }
+
+                    &.list {
+                        display: block;
+                        background-image: url('../images/grid_icons.jpg');
+                        width: 20px;
+                        height: 17px;
+                        background-position: 20px 0px;
+
+                        &.active {
+                            background-position: 20px 17px;
+                        }
+                    }
+
+                    &:first-child {
+                        margin-right: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    #list {
+        max-width: 710px;
+        margin: 0 auto !important;
+
+        .media-box-content {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.65);
+            width: 100%;
+            bottom: 0;
+
+            .media-box-title {
+                font-size: 24px;
+
+                @include media($mobile) {
+                    font-size: 14px;
+                }
+            }
+
+            .tags {
+                margin-top: 15px;
+
+                @include media($mobile) {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .media-box {
+        display: none;
+
+        &.media-box-loaded {
+            display: block;
+        }
+
+        a {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .media-box-content {
+            background-color: $white;
+            padding: 10px;
+            clear: both;
+
+            .media-box-title {
+                @include avenirMed;
+                font-size: 14px;
+                color: $black;
+
+                a {
+                    line-height: 1.2;
+                    display: block;
+                    color: $black;
+                }
+            }
+
+            .tags {
+                margin-top: 10px;
+            }
+
+            ul {
+                @include clearfix;
+                list-style: none;
+
+                li {
+                    @include avenirMed;
+                    display: inline-block;
+                    cursor: pointer;
+                    background-color: #e8e8e8;
+                    color: darken(#a5a5a5, 25%);
+                    border-radius: 4px;
+                    margin-right: 5px;
+                    margin-bottom: 5px;
+                    font-size: 12px;
+                    padding: 0 5px;
+
+                    @include media($mobile) {
+                        margin-right: 3px;
+                        margin-bottom: 3px;
+                        font-size: 10px;
+                        padding: 0 3px;
+                        width: calc(50% - 3px);
+                        float: left;
+                        text-align: center;
+                    }
+
+                    &.selected {
+                        background-color: #abbdc5;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .media-boxes-no-more-entries {
+        display: none;
+    }
+}

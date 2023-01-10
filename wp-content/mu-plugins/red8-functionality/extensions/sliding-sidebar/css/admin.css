@@ -1,0 +1,46 @@
+#poststuff #post-body.columns-2 {
+	margin-right: 0;
+}
+
+#poststuff #post-body.columns-1 {
+	margin-right: 0 !important;
+}
+
+#post-body.columns-1 .slide_sidebar_button {
+	display: none;
+}
+
+#post-body.columns-2 .slide_sidebar_button {
+	position: fixed;
+	height: 50px;
+	top: 50%;
+	right: -30px;
+	z-index: 100000;
+	
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+	
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+	
+	/* IE */
+	-ms-transform: rotate(-90deg);
+	
+	/* Opera */
+	-o-transform: rotate(-90deg);
+	
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#poststuff .closed_sidebar.columns-2 .postbox-container, #poststuff .closed_sidebar.columns-2 #post-body-content {
+	width: 97%;
+}
+
+#poststuff .closed_sidebar.columns-1 .postbox-container, #poststuff .closed_sidebar.columns-1 #post-body-content {
+	width: 100%;
+}
+
+#wpbody {
+	overflow-x: hidden;
+}

@@ -1,0 +1,60 @@
+.error404 {
+    background-color: #35373c;
+
+    .not-found {
+        @include bvilleRegular;
+        color: $white;
+        line-height: 1;
+        text-align: center;
+        height: auto;
+        padding: 200px 0;
+
+        @include media($mobile) {
+            padding: 100px 0;
+        }
+
+        .h1-404 {
+            font-size: 4em;
+            font-weight: 100;
+            margin: 10px 0;
+
+            @include media($mobile) {
+                font-size: 3.5em;
+            }
+        }
+
+        .sub-h1 {
+            font-size: 3em;
+            font-weight: 100;
+            margin: 15px 0;
+
+            @include media($mobile) {
+                font-size: 2.5em;
+            }
+        }
+
+        p {
+            font-size: 2em;
+            font-weight: 100;
+
+            @include media($mobile) {
+                font-size: 1.5em;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            border-bottom: 2px solid $white;
+            color: $white;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+
+    .site_footer{
+        background: #33353a !important;
+    }
+}

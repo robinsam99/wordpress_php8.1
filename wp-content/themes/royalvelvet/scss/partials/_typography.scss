@@ -1,0 +1,60 @@
+// typography baselines and @font face setups
+
+h1, h2, h3, h4 {
+	$font-family: $helvetica;
+}
+
+//Typography mixins
+@mixin bvilleRegular {
+	font-family: 'Baskerville W01 Regular_705699';
+	font-weight: 400;
+	font-style: normal;
+}
+
+@mixin bvilleItalic {
+	font-family: 'Baskerville W01 Italic';
+	font-weight: 400;
+	font-style: italic;
+}
+
+@mixin bvilleMed {
+	font-family: 'Baskerville W01 Medium_705693';
+	font-style: normal;
+}
+
+@mixin bvilleMedItalic {
+	font-family: 'BaskervilleW01-MediumIt_705696';
+	font-style: italic;
+}
+
+@mixin bvilleBold {
+	font-family: 'Baskerville W01 Bold_705687';
+	font-weight: 700;
+	font-style: normal;
+}
+
+@mixin avenirLight {
+	font-family: 'Avenir Next Cyr W00 Light';
+}
+
+@mixin avenirReg {
+	font-family: 'Avenir Next Cyr W00 Regular';
+}
+
+@mixin avenirItalic {
+	font-family: 'Avenir Next Cyr W00 Italic';
+}
+
+@mixin avenirMed {
+	font-family: 'Avenir Next Cyr W00 Medium';
+	font-weight: 500;
+}
+
+@mixin avenirDemi {
+	font-family: 'Avenir Next Cyr W00 Demi';
+}
+
+@mixin avenirBold {
+	font-family: 'Avenir Next Cyr W00 Bold';
+	font-weight: bold;
+}

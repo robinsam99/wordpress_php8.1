@@ -1,0 +1,33 @@
+/*
+Theme Name: Royal Velvet
+Theme URI: http://royalvelvet.com
+Author: Royal Velvet
+Author URI: http://royalvelvet.com
+Description: A custom theme designed for Royal Velvet.
+Version: 1.0
+Tags: Bourbon, Neat, Grunt, Livereload, h5bp, Font Aweseome
+*/
+body
+{
+	background:none !important;
+	background-color: #0c1962 !important;
+}
+#global_header {
+	background:none !important;
+	background-color: #0c1962 !important;
+}
+.ginput_container.ginput_container_email {
+border: 1px solid red !important;
+				width: 100% !important;
+				border: none !important;
+				padding: 11.5px 0 11.5px 12px !important;
+				border-radius: 0px !important;
+			}
+.homepage .home_slider{
+	background:none !important;
+}			
+label
+{
+	font-size: 12px !important;
+	text-align: left !important;
+}
